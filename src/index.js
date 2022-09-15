@@ -38,17 +38,13 @@ const lName = 'Mehadi';
 5. 
 */
 const name = "Muhammad Mehadi";
+const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
 ReactDOM.render(
   <React.Fragment>
-    <h1>{name === "Muhammad Mehadi" ? name : "No Name Found."}</h1>
-    <p>I am Web Developer.</p>
-    <ol>
-      <li>Html-Css</li>
-      <li>Javascript</li>
-      <li>React</li>
-      <li>Nodejs</li>
-      <li>Mongodb</li>
-    </ol>
+    <h1>Hello, My name is {name}</h1>
+    <p>Current Date is = {currDate}</p>
+    <p>Current Time is = {currTime}</p>
   </React.Fragment>,
   document.getElementById("root")
 );
