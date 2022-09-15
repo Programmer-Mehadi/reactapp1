@@ -48,12 +48,16 @@ Link css file:
 const name = "Muhammad Mehadi";
 const currDate = new Date().toLocaleDateString();
 const currTime = new Date().toLocaleTimeString();
+const timeStyle = {
+  color: 'red',
+  fontWeight:'bold',
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.Fragment>
     <h1 className="name" id="id">Hello, My name is {name}</h1>
     <p>Current Date is = {currDate}</p>
-    <p>Current Time is = {currTime}</p>
+    <p style={timeStyle}>Current Time is = {currTime}</p>
     <a href="https://youtube.com">Link</a>
   </React.Fragment>
 );
