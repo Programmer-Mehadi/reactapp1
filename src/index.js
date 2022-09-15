@@ -21,17 +21,22 @@ React fragment: don't need create any other div/a/h1/any tag.
 way-1: <React.Fragment></React.Fragment>
 way-2:<></>
 */
-
+/*
+JSX expression:
+1. {variable_name}
+2. {name === "Muhammad Mehadi" ? name : "No Name Found."}
+*/
+const name = "Muhammad Mehadi";
 ReactDOM.render(
   <React.Fragment>
-    <h1>Muhammad Mehadi</h1>
+    <h1>{name === "Muhammad Mehadi" ? name : "No Name Found."}</h1>
     <p>I am Web Developer.</p>
     <ol>
-    <li>Html-Css</li>
-    <li>Javascript</li>
-    <li>React</li>
-    <li>Nodejs</li>
-    <li>Mongodb</li>
+      <li>Html-Css</li>
+      <li>Javascript</li>
+      <li>React</li>
+      <li>Nodejs</li>
+      <li>Mongodb</li>
     </ol>
   </React.Fragment>,
   document.getElementById("root")
