@@ -3,7 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<h1>Muhammad Mehadi</h1>, document.getElementById('root'));
+/* first parameter ki dakhabo tai , 2nd parameter kothay dekhabo. */
+/*
+multi jsx render :
+
+way-1: [
+<h1>Muhammad Mehadi</h1>,
+<h3>I am Web Developer.</h3>
+]
+way-2:
+<div ><h1>Muhammad Mehadi</h1>
+<h3>I am Web Developer.</h3></div>
+*/
+ReactDOM.render(<div ><h1>Muhammad Mehadi</h1>
+<h3>I am Web Developer.</h3></div>
+  , document.getElementById('root'));
 
 
 
