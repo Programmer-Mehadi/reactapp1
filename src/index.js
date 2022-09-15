@@ -52,13 +52,31 @@ const timeStyle = {
   color: 'red',
   fontWeight:'bold',
 }
+let currentDate = new Date(2022,5,4,16);
+let currentHour = currentDate.getHours();
+let greeting = '';
+const cssStyle = {
+}
+if (currentHour >= 1 && currentHour < 12) {
+  greeting = 'Good Morning';
+  cssStyle.color = 'green';
+}
+else if (currentHour >= 12 && currentHour < 19) {
+  greeting = 'Good Afternoon';
+  cssStyle.color = 'orange';
+}
+else {
+   
+  greeting = 'Good Night';
+  cssStyle.color = 'black';
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.Fragment>
-    <h1 className="name" id="id">Hello, My name is {name}</h1>
-    <p>Current Date is = {currDate}</p>
-    <p style={timeStyle}>Current Time is = {currTime}</p>
-    <a href="https://youtube.com">Link</a>
+    <div className="container">
+    <h1>Hello Sir, <span style={cssStyle}>{greeting}</span></h1> 
+    </div>
   </React.Fragment>
 );
 
