@@ -1,6 +1,6 @@
 // import React from 'react';
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 // import reportWebVitals from './reportWebVitals';
 
@@ -40,17 +40,22 @@ const lName = 'Mehadi';
 /* 
 JSX Attributes: 
 */
+/*
+Link css file:
+1. import "./fileName.css";
+2. use class / className
+ */
 const name = "Muhammad Mehadi";
 const currDate = new Date().toLocaleDateString();
 const currTime = new Date().toLocaleTimeString();
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.Fragment>
-    <h1 contentEditable='true'>Hello, My name is {name}</h1>
+    <h1 className="name" id="id">Hello, My name is {name}</h1>
     <p>Current Date is = {currDate}</p>
     <p>Current Time is = {currTime}</p>
     <a href="https://youtube.com">Link</a>
-  </React.Fragment>,
-  document.getElementById("root")
+  </React.Fragment>
 );
 
 // If you want to start measuring performance in your app, pass a function
