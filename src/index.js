@@ -26,6 +26,17 @@ JSX expression:
 1. {variable_name}
 2. {name === "Muhammad Mehadi" ? name : "No Name Found."}
 */
+
+/*
+Template literals:
+const fName = 'Muhammad';
+const lName = 'Mehadi';
+1. {fname}{lname}
+2. {fname+lname}
+3. {fname+" "+lname}
+4. {`${fname} ${lname}`}
+5. 
+*/
 const name = "Muhammad Mehadi";
 ReactDOM.render(
   <React.Fragment>
