@@ -37,14 +37,18 @@ const lName = 'Mehadi';
 4. {`${fname} ${lname}`}
 5. 
 */
+/* 
+JSX Attributes: 
+*/
 const name = "Muhammad Mehadi";
 const currDate = new Date().toLocaleDateString();
 const currTime = new Date().toLocaleTimeString();
 ReactDOM.render(
   <React.Fragment>
-    <h1>Hello, My name is {name}</h1>
+    <h1 contentEditable='true'>Hello, My name is {name}</h1>
     <p>Current Date is = {currDate}</p>
     <p>Current Time is = {currTime}</p>
+    <a href="https://youtube.com">Link</a>
   </React.Fragment>,
   document.getElementById("root")
 );
