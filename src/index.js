@@ -25,7 +25,14 @@ way-2:<></>
 ReactDOM.render(
   <React.Fragment>
     <h1>Muhammad Mehadi</h1>
-    <h3>I am Web Developer.</h3>
+    <p>I am Web Developer.</p>
+    <ol>
+    <li>Html-Css</li>
+    <li>Javascript</li>
+    <li>React</li>
+    <li>Nodejs</li>
+    <li>Mongodb</li>
+    </ol>
   </React.Fragment>,
   document.getElementById("root")
 );
