@@ -11,15 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.name {
-  color: brown;
-}
-h1 {
-  color: rgb(232, 67, 155);
-  background-color: bisque;
-  padding: 10px 30px;
-  text-align: center;
-  width: fit-content;
-  margin: 30% auto;
-  border-radius: 10px;
-}
